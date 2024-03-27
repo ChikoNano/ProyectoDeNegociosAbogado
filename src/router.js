@@ -3,6 +3,7 @@ import ProductosComponent from '@/components/ProductosComponent'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import ContactoComponent from '@/components/ContactoComponent'
+import HeaderComponent from '@/components/HeaderComponent'
 
 const routes = [
     {
@@ -14,9 +15,11 @@ const routes = [
     {
         path: '/hello-world', component: HelloWorld
     },
-    // todo - agregar la otra rutas
-    {
+     {
         path: '/Contacto', component: ContactoComponent
+    },
+    {
+        path: '/Header', component: HeaderComponent
     }
 ]
 
