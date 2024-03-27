@@ -1,4 +1,5 @@
 <template>
+
 <header>
     <div class="caja">
        <nav>
@@ -27,12 +28,12 @@
 
 <script>
 export default {
-    name: 'HeaderComponent'
-}
+    name: 'HeaderComponent',
+  }
 </script>
 
 <style scoped>
-{
+header{
     background-color: #42b983;
 }
 .HeaderMenu{
