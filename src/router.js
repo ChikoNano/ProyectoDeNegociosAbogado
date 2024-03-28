@@ -21,6 +21,7 @@ const routes = [
     {
         path: '/Header', component: HeaderComponent
     }
+
 ]
 
 export const router = createRouter({

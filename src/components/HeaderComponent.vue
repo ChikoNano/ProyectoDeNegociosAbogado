@@ -2,9 +2,7 @@
 
 <header class="encabezado">
     <div class="caja">
-
        <nav>
-
                 <ul  class="HeaderMenu">
                     <img alt="Vue logo" class="imagenHeader" src="assets/logo.png">
                     <li>
@@ -58,7 +56,6 @@ header{
     margin-top: 2%;
     text-align: center;
    }
-
 
 nav li{
     display: inline;
