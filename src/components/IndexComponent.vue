@@ -1,8 +1,8 @@
 <template>
-<div class="indexObject">
-    <h2>Index Component 1</h2>
-    <h2>Index Component 2</h2>
-    <h2>Index Component 3</h2>
+<div id="grid">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
 </div>
 </template>
 
@@ -13,20 +13,36 @@ export default {
 </script>
 
 <style scoped>
-.indexObject{
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-    width: 100%;
-    background-color: orange;
- }
-h2{
-    width: 100%;
-    background-color: #42b983;
-    margin: 10px;
-    color: #000002;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
+body {
+    margin: 0;
+}
+
+#grid {
+    height: 20rem;
+    transition: 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    background: crimson;
+}
+
+:where(.left, .center, .right) {
+    background: navajowhite;
+    transition: 300ms;
+}
+
+:where(.left, .center, .right):hover {
+    background: crimson;
+}
+
+#grid:has(.left:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+#grid:has(.center:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+#grid:has(.right:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr;
 }
 </style>
